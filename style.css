@@ -1,0 +1,477 @@
+/* PC、スマホ共通スタイル */
+.google-fonts {
+font-family: 'M PLUS 丸みを帯びた 1c', サンセリフ;
+}
+
+p {
+  font-size: 15px;
+}
+
+/*================
+PC用のスタイル
+=================*/
+@media screen and (min-width: 768px) {
+/* 横幅設定 */
+body {
+  background-image: url(images/sugawara6.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 1080px;
+  min-width: 960px;
+  margin: 0 auto 0 auto;
+}
+
+/* ヘッダー */
+header {
+    position: absolute;
+    width: 100%;
+    padding: 30px 7vw;
+    box-sizing: border-box;
+    z-index: 11;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* ナビゲーションのレイアウト */
+header > id {
+  content: '';
+  display: block;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgb(50, 50, 50);
+}
+
+  /* ナビゲーションのレイアウト */
+  #nav-pc {
+    text-align: right;
+    font-size: 18px;
+    padding-top: 15px;
+  }
+  
+  /* ナビゲーションのリンクの装飾設定 */
+  #nav-pc > a {
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  #nav-pc > a:link {
+    color: #0d0d0d;
+  }
+  #nav-pc > a:visited {
+    color: #0d0d0d;
+  }
+  #nav-pc > a:hover {
+    color: #0d0d0d;
+    text-decoration: underline;
+  }
+  #nav-pc > a:active {
+    color: #0d0d0d;
+  }
+
+/* メインビジュアル*/
+#main-visual {
+  position: relative;
+  height: 400px;
+}
+
+#main-visual div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+
+  max-width: 620px;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+  #main-visual > div > h1 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Yuji Boku', serif;
+    margin: 0;
+    font-size: 50px;
+    font-weight: normal;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 140px 0 0 50px;
+    line-height: 1.5;
+    text-shadow:
+    1px 1px 0px #000, -1px -1px 0px #000,
+   -1px 1px 0px #000,  1px -1px 0px #000,
+    1px 0px 0px #000, -1px  0px 0px #000,
+    0px 1px 0px #000,  0px -1px 0px #000;
+    justify-content: center;
+  }
+
+  #main-visual > div > p {
+    font-size: 15px;
+    margin: 0 0 0 50px;
+  }
+
+   /* ABOUT  */
+   #about {
+    margin: 80px auto 80px auto;
+
+  }
+
+  #about > h2 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Yuji Boku', serif;
+    margin:3em 1em;
+    position: relative;
+    padding: 0.5em 2.0em;
+    border-top: solid 2px rgba(0, 0, 0, 0.22);
+    border-bottom: solid 2px rgba(0, 0, 0, 0.22);
+}
+#about > h2:before, #about > h2:after{
+  content: '';
+  position: absolute;
+  top: -10px;
+  width: 2px;
+  height: -webkit-calc(100% + 10px);
+  height: calc(100% + 20px);
+  background-color: rgba(0, 0, 0, 0.22);
+}
+
+#about > h2:before {left: 10px;}
+#about > h2:after {right: 10px;}
+
+#about > p {
+  font-family: 'Hina Mincho', serif;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Yuji Boku', serif;
+}
+
+.wrap > h3 {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Yuji Boku', serif;
+  text-align: center;
+  position: relative;
+  background-color: rgba(99, 135, 180, 0.5);
+}
+
+.wrap > img {
+  display: block;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+}
+
+  /* pray */
+  #pray > h2 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Yuji Boku', serif;
+  }
+  #pray > h3 {
+    font-family: 'Hina Mincho', serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Yuji Boku', serif;
+}
+
+#pray > p {
+  font-family: 'Hina Mincho', serif;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Yuji Boku', serif;
+}
+
+ /* ACCESS */
+ .access > h2 {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Yuji Boku', serif;
+ }
+
+ .access > p {
+  font-family: 'Hina Mincho', serif;
+ font-family: 'M PLUS Rounded 1c', sans-serif;
+ font-family: 'Yuji Boku', serif;
+ }
+
+  /* 画像を入れる枠 */
+  #about > img {
+    width: 100%;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+    /* フッター */
+    footer {
+  
+      background-color: #4f85a6;
+      text-align: center;
+      padding: 80px 80px 30px 80px;
+    }
+
+    #footer-logo {
+      margin-bottom: 30px;
+    }
+
+    #footer-link {
+      margin-bottom: 50px;
+    }
+    #footer-link > a {
+      text-decoration: none;
+      margin: 10px;
+    }
+    #footer-link > a:link {
+      color: #ffffff;
+    }
+    #footer-link > a:visited {
+      color: #ffffff;
+    }
+    #footer-link > a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+    #footer-link > a:active {
+      color: #ffffff;
+    }
+       /* スマホ用ナビを非表示 */
+    svg {
+      display: none;
+    }
+   #nav-sp,
+   #menu-sp {
+     display: none;
+   }
+  }
+
+    /*====================
+  スマートフォン用のスタイル
+  =====================*/
+  @media screen and (max-width: 767px) {
+    body {
+      background-image: url(images/sugawara6.jpg);
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      min-width: 375px;
+      margin: 0;
+      z-index: 11;
+    }
+
+    /* PC用ナビゲーション非表示 */
+    #nav-pc {
+      display: none;
+    }
+
+
+    /* ハンバーガーメニュー */
+    #menu-sp {
+      float: right;
+      padding: 0;
+      z-index: 9;
+
+    }
+
+       /* スマホ用ナビゲーションの表示切替 */
+   /* 初期状態、レイアウトと非表示設定 */
+   #nav-sp {
+    background-color: #4f85a6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 10;
+  }
+
+    /* ナビゲーションメニュー用ロゴ */
+    #logo-sp {
+      margin: 80px 10px 30px 20px;
+    }
+  
+     /* ナビゲーションのリンクの装飾設定 */
+     #nav-sp > a {
+       display: block;
+     }
+     #nav-sp > a:link {
+       color: #ffffff;
+     }
+     #nav-sp > a:visited {
+       color: #ffffff;
+     }
+     #nav-sp > a:hover {
+       color: #ffffff;
+       text-decoration: underline;
+     }
+     #nav-sp > a:active {
+       color: #ffffff;
+     }
+     #nav-sp > .menu {
+       text-decoration: none;
+       display: block;
+       margin: 0 20px 0 20px;
+       height: 44px;
+       font-size: 16px;
+       background-image: url("images/arrow.png");
+       background-repeat: no-repeat;
+       background-position: right top;
+     }
+
+        /* メインビジュアル */
+   #main-visual {
+    position: relative;
+    height: 470px;
+    width: 100%;
+    overflow: hidden;
+
+  }
+  #main-visual > div {
+    position: absolute;
+    top: 20;
+    left: 0;
+    color: white;
+    text-align: center;
+    height: 280px;
+    width: 100%;
+    z-index: 11;
+  }
+  #main-visual > div > h1 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Yuji Boku', serif;
+    font-size: 28px;
+    margin: 100px 200px 0 0;
+    line-height: 1.5;
+    text-shadow:
+    1px 1px 0px #000, -1px -1px 0px #000,
+   -1px 1px 0px #000,  1px -1px 0px #000,
+    1px 0px 0px #000, -1px  0px 0px #000,
+    0px 1px 0px #000,  0px -1px 0px #000;
+  }
+
+  #main-visual > div > p {
+    margin: 0;
+  }
+
+
+  /* ABOUT */
+  #about img {
+    width: 100%;
+  }
+  #about > h2 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Yuji Boku', serif;
+    margin:3em 1em;
+    position: relative;
+    padding: 0.5em 2.0em;
+    border-top: solid 2px rgba(0, 0, 0, 0.22);
+    border-bottom: solid 2px rgba(0, 0, 0, 0.22);
+}
+
+
+#about > h2:before, #about > h2:after{
+  content: '';
+  position: absolute;
+  top: -10px;
+  width: 2px;
+  height: -webkit-calc(100% + 10px);
+  height: calc(100% + 20px);
+  background-color: rgba(0, 0, 0, 0.22);
+}
+
+#about > h2:before {left: 10px;}
+#about > h2:after {right: 10px;}
+
+#about > p {
+  font-family: 'Hina Mincho', serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Yuji Boku', serif;
+}
+
+.wrap > h3 {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Yuji Boku', serif;
+  text-align: center;
+  position: relative;
+  background-color: rgba(99, 135, 180, 0.5);
+}
+
+.wrap > img {
+  display: block;
+  margin: auto;
+  height: 350px;
+  width: 100px;
+}
+
+
+  /* pray */
+  #pray > h2 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Yuji Boku', serif;
+  }
+
+  #pray > h3 {
+    font-family: 'Hina Mincho', serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Yuji Boku', serif;
+}
+
+#pray > p {
+  font-family: 'Hina Mincho', serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Yuji Boku', serif;
+}
+
+/* ACCESS */
+#access > iframe {
+  width: 100%;
+  height: 240px;
+  margin: 40px 0 0 0;
+}
+
+.access > h2 {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Yuji Boku', serif;
+}
+
+.access > p {
+  font-family: 'Hina Mincho', serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Yuji Boku', serif;
+}
+
+   /* フッター */
+   footer {
+    background-color: #4f85a6;
+    padding: 30px 20px 50px 20px;
+  }
+
+  #footer-logo {
+    margin-bottom: 30px;
+  }
+
+  #footer-link {
+    margin-bottom: 50px;
+  }
+  #footer-link > a {
+    text-decoration: none;
+    margin: 0 20px 30px 0;
+    display: block;
+    background-image: url("images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  #footer-link > a:link {
+    color: #ffffff;
+  }
+  #footer-link > a:visited {
+    color: #ffffff;
+  }
+  #footer-link > a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  #footer-link > a:active {
+    color: #ffffff;
+  }
+
+
+  }
